@@ -1,0 +1,28 @@
+
+conda update conda
+conda install pip
+
+which python
+
+which pip
+
+# python -m pip install package_name
+#d2l is env_name you build
+conda create --name d2l python=3.9 -y
+
+conda activate d2l 
+
+conda install ipykernel
+
+python -m ipykernel install --user --name d2l --display-name "Python (d2l)"
+
+conda install torch==1.12.0
+conda install numpy pandas matplotlib jupyter
+
+
+
+conda deactivate
+
+conda clean --all
+conda remove --name env_name --all
+
